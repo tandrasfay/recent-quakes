@@ -19,7 +19,7 @@ inside your virtual machine:
 
 Then run the notebook from your machine with this command:
 
-    ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline &
+    ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline
 
 
 Objective
