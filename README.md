@@ -21,44 +21,51 @@ Then run the notebook from your machine with this command:
 
     ipython notebook --no-browser --ip=0.0.0.0 --script --pylab=inline &
 
+
+Objective
+---------
+
 This assignment features two main roles: the Data Curator and the
 Visualizer. All 4 members of your vertical group should work together
 no matter what individual roles you have assigned.
 
-You'll find me in our class IRC channel at times, but if you wish to
-schedule either virtual or in-person time with me, then send me a bCal
-invite.
+Your task
+---------
 
-If you schedule time with me you are welcome to work on the problem in
-my office with the pair programming stations that I have available and
-to ask me questions if that would help.
+1) Data Curation
 
-Your task:
+The USGS [eqa7day-M1.txt data
+url](http://earthquake.usgs.gov/earthquakes/catalogs/eqs7day-M1.txt)
+used in this program has been deprecated. As suggested by the warning
+message in the data feed:
 
-Data Curation
--------------
+    This USGS data file has been deprecated. To continue receiving
+    updates for earthquake information you must switch to the new data
+    format [http://earthquake.usgs.gov/earthquakes/feed/]. In the
+    future, data feeds will be updated and deprecated following our
+    official deprecation policy
+    [http://earthquake.usgs.gov/earthquakes/feed/policy.php].
 
-The USGS data file we are using has been deprecated. You need to
-upgrade this program to use the new USGS data feed:
+you need to upgrade this program to use the new USGS data feed:
 
 http://earthquake.usgs.gov/earthquakes/feed/
 
-Use the [Programmatic
-Access](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
-link and the [pandas JSON
-parser](http://pandas.pydata.org/pandas-docs/dev/io.html) to access
-the data.
+The new data feed includes a link for [Programmatic
+Access](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php).
+You should use the [pandas JSON
+parser](http://pandas.pydata.org/pandas-docs/dev/io.html) to read the
+data instead of the `read_csv` function in the original code.
 
 You will also need to find a way to cache the data locally so that
 your runs are exactly reproducible since the live data gets updated in
-real-time. How can we have a program which can use the live data, but
+real-time. You should write a program which can use the live data, but
 also optionally can store data from previous runs so that we can
-re-run the program in either mode: cached data or live data. Start
-simple, keep the data isolated/separate from the source code, and
-remember that the goal is to make it reproducible by someone else.
+re-run the program in either mode using *cached data* or *live data*.
 
-Visualization
--------------
+Start simple, keep the data isolated/separate from the source code,
+and remember that the goal is to make it reproducible by someone else.
+
+2) Visualization
 
 The definition of `plot_ak()` has a *very bad code smell*! What if we
 want to plot the earthquakes in California where I live now instead of
