@@ -25,6 +25,21 @@ Then run the notebook from your machine with this command:
 Objective
 ---------
 
+The objective of this assignment is to improve the data handling of
+the code by upgrading from the deprecated data source to the new data
+source which uses a different data format called
+[JSON](http://en.wikipedia.org/wiki/JSON).
+
+Since we are working with live data we also need to cache the data so
+that we can reliably re-run the code using the same data (or
+optionally with the live data).
+
+We would also like to be able to see data for earthquakes in states
+other than Alaska, so the next part of the assignment requires
+[refactoring](http://en.wikipedia.org/wiki/Code_refactoring) the code
+to parameterize the function definition instead of relying on the
+hard-coded values.
+
 This assignment features two main roles: the Data Curator and the
 Visualizer. All 4 members of your vertical group should work together
 no matter what individual roles you have assigned.
