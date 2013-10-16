@@ -53,8 +53,9 @@ Your task
 
 The USGS [eqa7day-M1.txt data
 url](http://earthquake.usgs.gov/earthquakes/catalogs/eqs7day-M1.txt)
-used in this program has been deprecated. As suggested by the warning
-message in the data feed:
+used in this program has been deprecated.
+
+As suggested by the warning message in the data feed:
 
     This USGS data file has been deprecated. To continue receiving
     updates for earthquake information you must switch to the new data
@@ -81,6 +82,13 @@ re-run the program in either mode using *cached data* or *live data*.
 
 Start simple, keep the data isolated/separate from the source code,
 and remember that the goal is to make it reproducible by someone else.
+
+**The duty of the Data Curator is to write a new version of the code
+that reproduces the same output as the old version of the code, but
+using the new data source.** Note, it may *not* be possible to do that
+exactly if the new data and the old data are substantially different,
+but hopefully they are exact in content, and differ only in format
+(CSV vs JSON).
 
 2) Visualization
 
