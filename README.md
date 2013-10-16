@@ -1,7 +1,17 @@
-Assignment Due: Monday, October 21st, 2013 (2013-10-21) at 11:59pm. On
-Tuesday Oct 22nd in class we will **not** have a formal presentation.
-Instead we will conduct a code review together.
+Due Date
+--------
+Monday, October 21st, 2013 (2013-10-21) at 11:59pm. On Tuesday Oct
+22nd in class we will **not** have a formal presentation. Instead we
+will conduct a code review together.
 
+Questions or Problems?
+----------------------
+Open an item in the Github issue tracker of this repository:
+
+https://github.com/stat157/recent-quakes/issues
+
+Preliminary Setup Steps
+-----------------------
 To run this example you'll need to install the following packages
 inside your virtual machine:
 
