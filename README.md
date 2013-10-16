@@ -99,6 +99,15 @@ fix it so that given any arbitrary list of earthquakes you can plot
 the bounding box around the location (e.g. the whole state) where the
 quakes occured?
 
+**The duty of the Visualizer is to refactor the hard-coded values out
+of the program and instead parameterize the function so that for any
+list of earthquakes in a particular region (i.e. California) it will
+generate a map showing the correct location.** Instead of including
+the lat/lon bounding box values in the body of the program you might
+consider storing that data in some format on disk and read it back
+into the program as a dataframe to pass to the function as a
+parameter.
+
 Also plot the quakes so we can see the magnitude and depth of each dot
 instead of the way they are plotted now which only shows the location;
 all the dots are the same color and the same size, but could be varied
