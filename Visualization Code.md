@@ -109,7 +109,7 @@ Run:
  plot_quakes(California, Longitude, Latitude, dimensions, projection)
 ```
 
-Here is the simplified coe, which simple takes in a data frame of earthquake data and plots all of the points:
+Here is the simplified code, which simple takes in a data frame of earthquake data and plots all of the points:
 
 ```python
 from mpl_toolkits.basemap import Basemap
