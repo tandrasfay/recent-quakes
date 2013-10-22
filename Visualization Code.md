@@ -163,13 +163,13 @@ def plot_quakes_simple(quakes):
         if quakes.Depth[i] < 100:
             depth_col = depth_level[0]
         elif 100 <= quakes.Depth[i] < 200:
-            depth_col = depth_level[0]
+            depth_col = depth_level[1]
         elif 200 <= quakes.Depth[i] < 300:
-            depth_col = depth_level[0]
+            depth_col = depth_level[2]
         elif 300 <= quakes.Depth[i] < 400:
-            depth_col = depth_level[0]
+            depth_col = depth_level[3]
         else:
-            depth_col = depth_level[0]
+            depth_col = depth_level[4]
             
         m.plot(x[i], 
                y[i],
